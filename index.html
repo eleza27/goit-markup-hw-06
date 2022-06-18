@@ -419,7 +419,7 @@
 
     <!-- Backdrop -->
 
-    <div class="backdrop is-hidden*" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-btn-icon" width="18" height="18">
@@ -458,20 +458,17 @@
                 </label>
                 <label class="contact-form-field">
                     <span class="contact-form-field-title">Комментарий</span>
-                    <textarea
-                    class="contact-form-message"
-                    placeholder="Введите текст"
-                    name="user-message">
-                    </textarea>
+                    <textarea class="contact-form-message" placeholder="Введите текст" name="user-message"></textarea>
                 </label>
-                    <input
-                    class="contact-form-checkbox"
-                    type="checkbox"
-                    id="checkbox-policy">
+                <input
+                class="contact-form-checkbox visually-hidden"
+                type="checkbox"
+                id="checkbox-policy"
+                name="user-policy">
                 <label
                 class="contact-form-checkbox-label"
                 for="checkbox-policy">
-                    Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
+                Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="contact-form-agree">Условия договора</a>
                 </label>
                 <button
                     class="contact-form-btn"
